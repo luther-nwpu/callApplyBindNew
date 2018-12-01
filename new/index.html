@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="mynew.js"></script>
+        <script type="text/javascript">
+            function myClass(name) {
+                this.name = name
+            }
+            myClass.prototype.sayHello = function() {
+                console.log(this.name)
+            }
+            myClass.cc = '444'
+            myClass.prototype.cc = '60'
+            var myclass = objectFactory(myClass, '你好')
+            myclass.sayHello()
+            console.log(myclass.cc)
+            console.log(myClass.cc)
+        </script>
+    </head>    
+</html>

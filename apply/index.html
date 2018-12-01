@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="myapply.js"></script>
+        <script type="text/javascript">
+            function func(li, li1) {
+                console.log(li)
+                console.log(li1)
+                console.log(this.name)
+            }
+            var obj = {
+                li: '你好',
+                name: '你好a',
+                li1: '你哈11'
+            }
+            func.myapply(obj, ['li', 'li1'])
+        </script>
+    </head>
+</html>

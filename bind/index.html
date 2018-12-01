@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="mybind.js"></script>
+        <script type="text/javascript">
+            var func = function() {
+                console.log(this.name)
+            }
+            var obj = {
+                name: '你好',
+                func: func.bind2(null)
+            }
+            obj.func()
+            var func1 = func.bind2(obj)
+            func1()
+        </script>
+    </head>
+</html>
